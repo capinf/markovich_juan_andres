@@ -1,4 +1,4 @@
-<h1>CURSO DE PROGRAMACION FULL STACK</h1>
+#CURSO DE PROGRAMACION FULL STACK
 <h2>Comisión B</h2>
 <h3>Silicon Misiones - https://siliconmisiones.gob.ar/</h3>
 <p>Autor: Juan Andrés Markovich</p>

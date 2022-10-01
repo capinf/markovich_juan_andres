@@ -2,16 +2,15 @@
 <h2>Comisión B</h2>
 <h3>Silicon Misiones - https://siliconmisiones.gob.ar/</h3>
 <p>Autor: Juan Andrés Markovich</p>
+<p>Descripción:</p>
+<p>Este Repositorio fue creado con fines académicos. Contiene ejercicios resueltos de la cursada 2022.</p>
 <p></p>
 <h3>Módulo 1 Nivelación y fundamentos de la Programación</h3>
 <h2>TP 01</h2>
-<p>Descripción:</p>
-<p>Este Repositorio fue creado con fines académicos. Contiene ejercicios resueltos de la cursada 2022.</p>
-
+<p></p>
 <h2>Ejercicio 1:</h2>
-<p>
-a) Abrir el editor HTML.
-b) Archivo Nuevo.
+<br>a) Abrir el editor HTML.</br>
+<br>b) Archivo Nuevo.</br>
 c) Copiar el código que empieza por siguiente.
 d) Menú... Archivo... Guardar como: Ejercicio1.html
 e) Abrir el archivo Ejercicio1.html en el navegador

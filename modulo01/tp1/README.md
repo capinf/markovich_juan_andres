@@ -2,20 +2,21 @@
 ## Comisión B
 ### Silicon Misiones - https://siliconmisiones.gob.ar/ 
 **Autor: Juan Andrés Markovich**  
-**Descripción:**  
-`Este Repositorio fue creado con fines académicos. Contiene ejercicios resueltos de la cursada 2022.`
+**Descripción:**  `Este Repositorio fue creado con fines académicos. Contiene ejercicios resueltos de la cursada 2022.`
 ___
-<h3>Módulo 1 Nivelación y fundamentos de la Programación</h3>
-<h2>TP 01</h2>
-<h4>Ejercicio 1:</h4>
-<br>a) Abrir el editor HTML.</br>
-<br>b) Archivo Nuevo.</br>
-<br>c) Copiar el código que empieza por siguiente.</br>
-<br>d) Menú... Archivo... Guardar como: Ejercicio1.html.</br>
-<br>e) Abrir el archivo Ejercicio1.html en el navegador.</br>
-<br>f) Después del primer mensaje, se debe mostrar otro mensaje que diga "Soy el primer script".</br>
-<br>g) Agregar comentarios que expliquen el funcionamiento del código.</br>
-<br></br>
+## Módulo 1 Nivelación y fundamentos de la Programación
+### TP 01 ###
+#### Ejercicio 1
+  
+a) Abrir el editor HTML.  
+b) Archivo Nuevo.  
+c) Copiar el código que empieza por siguiente.  
+d) Menú... Archivo... Guardar como: Ejercicio1.html.  
+e) Abrir el archivo Ejercicio1.html en el navegador.  
+f) Después del primer mensaje, se debe mostrar otro mensaje que diga "Soy el primer script".  
+g) Agregar comentarios que expliquen el funcionamiento del código.  
+
+
 <h4>Ejercicio 2:</h4>
 <br>Copiar el siguiente código dentro de un archivo, luego guardarlo con el nombre: “Ejercicio2.html”. Ejecuta el programa en el navegador.</br>
 <h4>Ejercicio 3:</h4>

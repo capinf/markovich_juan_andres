@@ -15,7 +15,8 @@ e) Abrir el archivo Ejercicio1.html en el navegador.
 f) Después del primer mensaje, se debe mostrar otro mensaje que diga "Soy el primer script".  
 g) Agregar comentarios que expliquen el funcionamiento del código.  
 
-`<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html>
 <head>
 <title>Ejercicio 1 </title>
@@ -25,7 +26,9 @@ g) Agregar comentarios que expliquen el funcionamiento del código.
 document.writeln("Hola Mundo!");
 </script>
 </body>
-</html>´  
+</html>
+```  
+  
 
 <h4>Ejercicio 2:</h4>
 <br>Copiar el siguiente código dentro de un archivo, luego guardarlo con el nombre: “Ejercicio2.html”. Ejecuta el programa en el navegador.</br>

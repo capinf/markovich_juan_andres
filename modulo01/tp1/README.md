@@ -91,7 +91,22 @@ Copiar el siguiente código dentro de un archivo, luego guardarlo con el nombre:
 ```
 
 ### Ejercicio 5
-Copiar el siguiente código dentro de un archivo, luego guardarlo con el nombre: Ejercicio5.html’.  
-Ejecuta el programa en el navegador.  
+Copiar el siguiente código dentro de un archivo, luego guardarlo con el nombre: Ejercicio5.html. Ejecuta el programa en el navegador.   
+  
 Obs: El siguiente código tiene un error, para corregirlo se debe depurar el código en el navegador. Depurar con chrome: https://developer.chrome.com/docs/devtools/javascript/  
-
+  
+```
+<!DOCTYPE html>
+<html><body>
+  <script type="text/javascript">
+    let a, b;
+    a = 3; b = 7;
+    resultado = a * b;
+    document.write(`Variable a contiene ${a} <br> ` );
+    document.write(`Variable b contiene ${b} <br> ` );
+    document.write(`El producto de a por b es ${result} `);
+  </script>
+<p>Los puntos de interrupción son fundamentales para programar</p>
+</body>
+</html>  
+```

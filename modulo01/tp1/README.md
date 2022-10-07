@@ -171,7 +171,8 @@ guardado los meses del año. Luego el usuario debe poder tipear en el navegador 
 número de 1 al 12 y este le devolverá el nombre del mes. Por ejemplo escribe 5 debe
 devolver el mes mayo.  
   
-## Bibliografía:
+  
+## Bibliografía
   https://www.w3schools.com/js/js_variables.asp  
   https://www.w3schools.com/jsref/jsref_parseint.asp  
   https://lenguajejs.com/javascript/arrays/que-es/  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 7</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 7</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Crear una función que muestre información sobre una cadena de texto que se le pasa como
+        argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
+        formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.</p>
+   
+    <p></p>
+    <script type="text/javascript">
+    
+    cadenaOrignal=prompt("Ingrese una palabra .. Pruebe con MENEM y luego utilice otra");
+
+    function viraCambota(cadenaOrignal){
+        var nuevaCadena="";
+        for(var i=cadenaOrignal.length-1; i>=0; i--){
+            nuevaCadena +=cadenaOrignal[i];
+        }
+        return nuevaCadena;
+    }
+    
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    document.write("A la palabra <b>"+cadenaOrignal+"</b> la dimos Vira Cambota y quedó así <b>>> "+viraCambota(cadenaOrignal)+"</b>");
+
+    </script>
+
+</body>
+</html>

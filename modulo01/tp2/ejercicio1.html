@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 1</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 1</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>1. Determinar cuál de los elementos de texto es mayor, es decir el que contenga más
+        letras. </p>
+    <p>2. Imprimir los elementos de menor a mayor cantidad de letras.</p>
+    <p>3. Determinar el resultado de las cuatro operaciones matemáticas realizadas con los dos
+        elementos numéricos.</p>
+
+
+
+    <p></p>
+    <script type="text/javascript">
+        
+        var verdadero, char;
+        var Valores = [verdadero, false, 2, "hola","mundo", 3, char];
+        var ArregloString=[]; // Definimos el arreglo donde irán los elementos de texto
+                
+        // Punto 1 
+        // Identificamos los objetos de tipo string y los cargamos al array ArregloString
+        for(let i=0; i<Valores.length; i++){
+            
+            if(typeof Valores[i]==="string"){
+                ArregloString.push(Valores[i]);
+            }
+        }
+
+        // Definimos dos variables para identificar el objeto con mayor longitud y ordenarla
+        // recorriendo el arreglo con un for y comparando la longitud con un if ...
+        var MayorLong=0;
+        var PalabraMayor=0;
+        
+
+        for (let i=0; i<ArregloString.length; i++){
+            if(ArregloString[i].length>MayorLong){
+                PalabraMayor=ArregloString[i];
+                MayorLong=ArregloString[i].length;
+            }
+        }
+        document.write("<p></p><h2>Respuestas</h2><p></p>");
+        document.write("<p>1.- La palabra con Mayor Longitud es "+PalabraMayor+"</p>");
+       
+        //Punto 2
+        // Ordenamos el arreglo de mayor a menor de acuerdo al y lo imprimimos 
+        
+        document.write("<p>2.- Imprimiendo los objetos de menor a mayor: "+ArregloString.sort(
+            function(a,b){return a.length - b.length}
+            )+"</p>");
+        
+        //Punto 3
+        
+        var ArregloNumeros=[]; // Definimos el donde irán los elementos de tipo numérico
+        
+        //Identificamos los objetos de tipo number y los cargamos al array ArregloNumeros
+        for(let i=0; i<Valores.length; i++){
+            
+            if(typeof Valores[i]==="number"){
+                ArregloNumeros.push(Valores[i]);
+            }
+        }
+       
+        
+        var SumaValores=0; //Declaramos una variable para sumar los valores al recorrer el arreglo
+        var RestaValores=0; //Declaramos una variable para sumar los valores al recorrer el arreglo
+        var MultipValores=0; //Declaramos una variable para sumar los valores al recorrer el arreglo
+        var DiviValores=0; //Declaramos una variable para sumar los valores al recorrer el arreglo
+        
+        //Recorremos el arreglo y sumamos cada posición
+        for(let i=0; i<ArregloNumeros.length; i++){
+            SumaValores+=ArregloNumeros[i];
+        };
+
+        //Recorremos el arreglo y restamos cada posición
+        for(let i=0; i<ArregloNumeros.length-1; i++){
+            RestaValores=ArregloNumeros[i]-ArregloNumeros[i+1];
+        };
+        
+        //Recorremos el arreglo y multiplicamos cada posición
+        for(let i=0; i<(ArregloNumeros.length-1); i++){
+            MultipValores+=ArregloNumeros[i]*(ArregloNumeros[i+1]);
+        };
+        
+        //Recorremos el arreglo y dividimos cada posición
+        for(let i=0; i<(ArregloNumeros.length-1); i++){
+            DiviValores+=ArregloNumeros[i]/(ArregloNumeros[i+1]);
+        };
+
+        document.write("<p>3.- La suma de los valores es <b>>> "+SumaValores+"</b>"+
+            "<p>La resta de los valores es <b>>> "+RestaValores+"</b></p>"+
+            "<p>La multiplicación de los valores es <b>>> "+MultipValores+"</b></p>"+
+            "<p>La división de los valores es <b>>> "+DiviValores+"</b></p>");
+    </script>
+
+</body>
+</html>

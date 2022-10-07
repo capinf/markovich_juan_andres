@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 9</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 9</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Crear un programa que recibe las notas de un alumno, todos los números deben ser naturales
+        Debe calcular el promedio. Por último imprimir en pantalla si el valor de media es "<" 5
+        “Reprobado”, entre 6 y 8 “Aprobado” y si es mayor a 8 “Sobresaliente”.</p>
+   
+    <p></p>
+    <script type="text/javascript">
+    
+    var misNotas = [8 , 5 , 3 , 8 , 4];
+ 
+
+    function promedioNotas(misNotas){
+        var sumaTotal = 0;
+        for (i=0; i < misNotas.length; i++){
+            sumaTotal = sumaTotal+misNotas[i];
+        }
+        return sumaTotal/misNotas.length;
+    }
+
+    function calificacionFinal(promedioNotas){
+      var calificacion = "";
+      if (promedioNotas(misNotas)<6){
+        calificacion="Desaprobado";
+      }
+      else if (promedioNotas(misNotas)>=6 && promedioNotas(misNotas)<9){
+        calificacion="Aproboado";
+      }
+      else if (promedioNotas(misNotas)>=9){
+        calificacion="Sobresaliente";
+      }   
+    return calificacion;
+    }
+    
+
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    document.write("<p>Para las notas <b>"+misNotas+".</b></p>") 
+    document.write("<p>El promedio de calificaciones es <b>>"+promedioNotas(misNotas)+"<.</b></p>");
+    document.write("<p>La calificación es <b>"+calificacionFinal(promedioNotas)+".</b>");
+    
+    </script>
+
+</body>
+</html>

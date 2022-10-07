@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 4</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 4</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Escribir el código de una función a la que se pasa como parámetro un número entero y
+        devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar
+        por pantalla el resultado devuelto por la función.</p>
+    <p>Por ejemplo 2=par; 5=impar…</p>
+    
+
+    <p></p>
+    <script type="text/javascript">
+    
+    numero = prompt("Ingrese un número entero");
+     
+    while (isNaN(numero) || numero % 1 != 0) {
+        if (isNaN(numero)) {
+            numero = prompt("Ups... >> " + numero + " << no es numérico. Ingrese un número entero");    
+        } 
+        else if (numero % 1 != 0)  {
+            numero = prompt("Ups... >> " + numero + " << es decimal. Ingrese un número entero");    
+        }
+    }
+            
+    function esPar(numero){
+        resultado="";
+        if (numero % 2 == 0) {
+            resultado="El valor es <b>PAR</b>";
+        } else {
+            resultado="El valor es <b>IMPAR</b>";
+        }
+        return resultado;
+    }
+    
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    document.write(esPar(numero));
+
+
+
+      
+
+    
+
+    </script>
+
+</body>
+</html>

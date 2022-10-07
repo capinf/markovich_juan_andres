@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 6</title>
+
+</head>
+<body>
+
+    <h1> Unidad 1 - TP2 - Ejercicio 6</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Escribir un script que muestre la posición de la primera vocal de un texto introducido por
+        teclado. Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1.</p>
+    <p></p>
+    
+    <script type="text/javascript">
+    
+    var vocales = ["a","e","i","o","u"];
+    var texto = prompt("Ingrese una palabra");
+    var enminusculas = texto.toLowerCase();
+    var posicion = 0;
+    var parar = false;
+
+    for (var i=0; i<enminusculas.length; i++){
+        for(var j=0; j < vocales.length; j++){
+            if(vocales[j] == enminusculas.charAt(i)){
+                posicion = i+1;
+                parar = true;
+                break;
+            }
+        }
+        if(parar){
+            break;
+        }
+    }
+
+    // Se imprimen los resultados
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    document.write("<p>La primera vocal de la palabra >> <b>"+texto+"</b> << es la <b>*"+enminusculas.charAt(i)+"*</b> y se encuentra en la posición Nº "+posicion+"</p>");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 8</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 8</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Crea una función que genere 100 números aleatorios entre 1 y 100 que no se repitan y luego
+        imprima por pantalla usando document.write(text).</p>
+   
+    <p></p>
+    
+    <script type="text/javascript">
+    
+    var minimo=1, maximo=100;
+    var nAleatorios=100;
+    var numAleatorios=[];
+     
+    function aleatorio(minimo,maximo){
+        return Math.round(Math.random() * (maximo - minimo) + minimo);
+    }
+    
+    for(var i=0; i<nAleatorios; i++){
+        numAleatorios.push(aleatorio(minimo,maximo));
+    }
+    
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    
+    document.write("<p>");
+    
+        for(var i=0; i<nAleatorios; i++){
+        document.write(numAleatorios[i]+" / ");
+    }
+    
+    document.write("</p>");
+    
+    </script>
+</body>
+</html>

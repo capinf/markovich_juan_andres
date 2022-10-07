@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 5</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 5</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Crear una función que muestre información sobre una cadena de texto que se le pasa como
+        argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
+        formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.</p>
+   
+    <p></p>
+    <script type="text/javascript">
+    
+    function info(cadena){
+        
+        var resultado="La cadena de texto >> "+cadena+" <<";
+
+        //Comprobamos mayúsculas a partir de un
+        if (cadena == cadena.toUpperCase()) {
+            resultado += " está compuesta sólo por <b>MAYUSCULAS.</b>";            
+        } 
+        else if(cadena == cadena.toLowerCase()) {
+           resultado += " está compuesta sólo por <b>minúsculas.</b>";
+        }
+        else if (cadena !== cadena.toLowerCase()) {
+            resultado += " está compuesta por <b>MAYÚSCULAS y minúsculas.</b>";
+        }
+
+        return resultado;
+    }
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    document.write("<p>"+info("<b>la programación es ...</b>")+"</p>");
+    document.write("<p>"+info("<b>La PROgramación es ...</b>")+"</p>");
+    document.write("<p><b>"+info("FULL STACK DEVELOPER")+"</b></p>");
+
+    </script>
+
+</body>
+</html>

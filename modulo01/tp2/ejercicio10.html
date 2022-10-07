@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 1 - TP2 Ejercicio 5</title>
+
+</head>
+<body>
+    <h1> Unidad 1 - TP2 - Ejercicio 10</h1>
+    <h2>Alumno: Juan Andrés Markovich</h2>
+    <p></p>
+    <p>Escribir un programa que reciba el número del mes y devuelva si tiene 31, 30 o menos días.
+        Por ejemplo:12 = tiene 31 días.</p>
+   
+    <p></p>
+    <script type="text/javascript">
+    
+    var mes = prompt("Ingrese un mes en números del 1 al 12");
+    var anio= prompt("Ingrese un año compuesto por 4 cifras por ejemplo 2012");
+
+    function diasDelMes(mes,anio) {
+	return new Date(anio,mes,0).getDate();
+    } 
+    
+    document.write("<p></p>");
+    document.write("<p><h2>Resolución</h2><p>");
+    document.write("El mes ><b>"+mes+"</b> del año ><b>"+anio+"</b> tiene <b>"+diasDelMes(mes,anio)+"</b> días");
+
+    </script>
+
+</body>
+</html>
+
+

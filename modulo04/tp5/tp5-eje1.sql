@@ -1,6 +1,6 @@
 -- Curso Full Stack Developer - Silicion Misiones - 2022
 -- Comisión B
--- TP5 - Ejercicio 2
+-- TP5 - Ejercicio #1
 -- Alumno: Juan Andrés Markovich
 
 -- 1. Lista el apellido de todos los empleados.

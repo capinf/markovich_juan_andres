@@ -293,11 +293,11 @@ SELECT d.nombre AS Departamento, d.presupuesto AS Presupuesto, d.gasto AS Gasto,
 		WHERE d.estado = 1;
 	
 -- 9. Listar todas todas las localidades agrupadas por pais. En la vista se deberia ver el nombre del pais y el nombre de la localidad
-SELECT p.nombre AS 'País', l.nombre AS 'Localidad'
-		FROM elsistema.paises AS p
-		JOIN elsistema.provincias AS pro ON p.id = pro.id_pais 
-		JOIN elsistema.localidades AS l ON p.id = l.id_provincia
-		GROUP BY p.nombre, l.nombre;
+SELECT p.nombre AS 'País', l.nombre AS 'Localidad'  
+		FROM provincias AS pro
+		JOIN paises AS p ON p.id = pro.id_pais
+		JOIN localidades AS l ON l.id_provincia = pro.id
+		GROUP BY p.nombre, l.nombre; 
 	
 	
 -- 10. Modificar (UPADTE):

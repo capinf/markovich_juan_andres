@@ -1,0 +1,41 @@
+{
+    "personas":    
+        [
+            {
+                "nombre":"Pedro",
+                "apellido":"Guzmán",
+                "dni":22773450,
+                "telefono":3755121314,
+                "localidad":"L.N. Alem"
+            },
+            {
+                "nombre":"María",
+                "apellido":"Nieves",
+                "dni":35928532,
+                "telefono":376131517,
+                "localidad":"Posadas"
+            },
+            {
+                "nombre":"Roberto Carlos",
+                "apellido":"Guerra",
+                "dni":40726384,
+                "telefono":3758171819,
+                "localidad":"Apósteles"
+            },
+            {
+                "nombre":"Julieta",
+                "apellido":"López",
+                "dni":29384710,
+                "telefono":3751222324,
+                "localidad":"Eldorado"
+            },
+            {
+                "nombre":"Ramón",
+                "apellido":"Rodriguez",
+                "dni":31749223,
+                "telefono":3765334455,
+                "localidad":"Posadas"
+            }
+
+        ]
+}
